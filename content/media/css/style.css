@@ -1,0 +1,9 @@
+body {
+    padding-top: 60px;
+    background-color: #eee;
+    font-family: 'Noticia Text','Droid Serif',Georgia,serif,'Lucida Grande','Lucida Sans Unicode','Arial Unicode MS';
+}
+
+.well.content {
+    background-color: #fff;
+}
