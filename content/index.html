@@ -1,11 +1,103 @@
 ---
-title: Guillaume Subiron - maethor
+title: "Guillaume Subiron"
+subtitle: "Administration système"
 extends: standard.j2
 default_block: None
 ---
+
 {% block main %}
 
-<p>toto</p>
+{#
+<ul>
+  <li>1, rue du Docteur Guttierez, 6400 Biarritz
+  <li>06.69.21.53.62 - 05.59.51.22.01
+  <li><script type="text/javascript">
+    <!--
+    document.write("guillaume" + "[@]" + "subiron[.]org")
+    // -->
+  </script>
+  <li>http://www.subiron.org
+  <li>22 ans, permis B, véhicule personnel
+</ul>
+#}
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#skills" data-toggle="tab">Compétences</a>
+  <li><a href="#references" data-toggle="tab">Expériences</a>
+</ul>
+
+<div class="tab-content">
+
+  <div class="tab-pane active" id="skills">
+    <h2>Compétences</h2>
+    
+    <h3>Programmation</h3>
+    
+    <dl class="dl-horizontal">
+      <dt>C++ - <em>maitrisé</em>
+      <dd>QtCode, QtGui, QtXML, Tulip
+    </dl>
+    
+    <h3>Administration Système</h3>
+    
+    <dl class="dl-horizontal">
+      <dt>OS
+      <dd>GNU/Linux Debian <em>maitrisé</em>, Debian kFreeBSD <em>bases</em>
+    </dl>
+    
+    <h3>Outils</h3>
+
+  </div>
+
+  <div class="tab-pane" id="references">
+    <h2>Expériences professionnelles</h2>
+    
+    <h3>Informatique</h3>
+    
+    <table class="table">
+      <tr>
+        <td><span class="label label-info">Avril - Septembre 2013</span></td>
+        <td><strong>Administrateur Système / Développeur Web</strong> chez <a href="#">Bluelogic (Bidart, 64)</a>
+          <ul>
+            <li>toto
+            <li>tata
+          </ul>
+        </td>
+      </tr>
+    
+      <tr class="inactive">
+        <td><span class="label label-inverse">Avril - Juin 2010</span></td>
+        <td><strong>Développeur Web</strong> (HTML, PHP, CSS) <strong>et Système</strong>(shellscript, Perl) / Stagiaire chez <a href="#">Les Développements Durables (Bayonne, 64)</a>
+          <p>Développement d'une interface web à destination d'utilisateurs non-techniciens pour permettre l'administration de serveurs Tranquilinux (GNU/Linux Debian).</p>
+      </tr>
+    </table>
+    
+    <h3>Projets d'études</h3>
+    
+    <table class="table">
+      <tr class="inactive">
+        <td><span class="label label-inverse">2012, Master 1</span></td>
+        <td><strong>Neural Network Simulator</strong>
+          <p>Développement d'un simulateur de réseau neuronal en C++, basé sur Tulip et Qt. Reprise d'un projet existant datant de 2006, mise en œuvre de méthodes de développement type eXtreme Programming pour intégrer au fur et à mesure l'existant tout en mettant en jour Tulip et Qt.</p>
+        </td>
+      </tr>
+    
+      <tr class="inactive">
+        <td><span class="label label-inverse">2011, Master 1</span></td>
+        <td><strong>Nachos</strong>
+          <p>Développement d'un système d'exploitation simplifié basé sur Nachos (C/C++). Ajout d'appels systèmes permettant de créer des threads et des processus. Gestion de la mémoire, pagination, etc.</p>
+        </td>
+      </tr>
+    
+      <tr class="inactive">
+        <td><span class="label label-inverse">2009 - 2010, DUT</span></td>
+        <td><strong>Migrations de programmes Java en cours d'exécution</strong>
+          <p>Développement d'une plateforme de migrations de programmes Java en cours d'exécution d'une machine à une autre. Utilisation avancée de Java (ClassLoader, etc.)</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 {% endblock %}
 
