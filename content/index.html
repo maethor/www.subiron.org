@@ -7,20 +7,6 @@ default_block: None
 
 {% block main %}
 
-{#
-<ul>
-  <li>1, rue du Docteur Guttierez, 6400 Biarritz
-  <li>06.69.21.53.62 - 05.59.51.22.01
-  <li><script type="text/javascript">
-    <!--
-    document.write("guillaume" + "[@]" + "subiron[.]org")
-    // -->
-  </script>
-  <li>http://www.subiron.org
-  <li>22 ans, permis B, véhicule personnel
-</ul>
-#}
-
 <ul class="nav nav-tabs">
   <li class="active"><a href="#me" data-toggle="tab">Qui suis-je ?</a>
   <li><a href="#skills" data-toggle="tab">Compétences</a>
@@ -34,9 +20,9 @@ default_block: None
   <div class="tab-pane fade in active" id="me">
     <div class="row-fluid">
       <div class="span4 offset1">
-        <img class="img-polaroid" src="/media/img/vcard.png" alt="VCard QRCode">
+        <img class="img-polaroid" src="/media/img/vcard.png" alt="VCard QRCode">{# :TODO:maethor:130614: Click on image to dl vcard #}
       </div>
-      <div class="span6">
+      <div class="span6 offset1">
         <h3>VCard</h3>
         <address>
           <a href="/contact"><script type="text/javascript">document.write("guillaume" + "@" + "subiron.org")</script></a><br>
@@ -59,33 +45,68 @@ default_block: None
     <h3>Programmation</h3>
     
     <dl class="dl-horizontal">
-      <dt>C++ - <em>maitrisé</em>
-      <dd>QtCode, QtGui, QtXML, Tulip
+      <dt>C++<dd>QtCode, QtGui, QtXML, Tulip
+      <dt>C<dd>Programmation système, multi-cœurs - <em>bases</em>
+      <dt>Java<dd>Fichiers, sockets, threads, Swing, patterns - <em>bonnes bases</em>
+      <dt>Scripts<dd>Schellscript, Python
+      <dt>Balises et associés<dd>HTML5 et CSS3, Bootstrap - <em>maitrisés</em>
+      <dt>Web<dd>PHP, Python - <em>bonnes bases</em>, JQuery - <em>bases</em>
+      <dt>Frameworks<dd>Flask, Django, Hyde, symfony 1.4 - <em>bonnes bases</em>
+      <dt>LaTeX<dd>Rapports, présentations, lettres, etc.
     </dl>
     
     <h3>Administration Système</h3>
     
     <dl class="dl-horizontal">
-      <dt>OS
-      <dd>GNU/Linux Debian <em>maitrisé</em>, Debian kFreeBSD <em>bases</em>
+      <dt>OS<dd>GNU/Linux Debian <em>maitrisé</em>, Debian kFreeBSD <em>bases</em>
+      <dt>Sécurité<dd>Maitrise d'iptables, notions de sécurisation de serveur
+      <dt>Services<dd>Administration quotidienne : 
+      <ul>
+        <li>Apache - HTTP(s)
+        <li>Postfix, Dovecot - SMTP(s), IMAP(s), POP(s)
+        <li>SpamAssassin, ClamAV - Antispam, Antivirus
+        <li>GitLab, gitolite/gitosis - Git
+        <li>bind9 - DNS(sec)
+        <li>sympa - Mailing Lists
+        <li>LDAP
+        <li>XMPP, FTP, etc.
+      </ul>
+      <dt>Monitoring<dd>Shinken, Nagios (via SNMP et NRPE)
+      <dt>VPN<dd>OpenVPN
     </dl>
     
-    <h3>Outils</h3>
+    <h3>Outils <small>- utilisation et administration</small></h3>
+
+    <dl class="dl-horizontal">
+      <dt>Gestion des sources<dd>Git, Subversion
+      <dt>Gestion de projet<dd>Chiliproject/Redmine, GitLab, Trac
+      <dt>Documentation<dd>Javadoc, Doxygen, Sphinx
+      <dt>Éditeurs/IDE<dd>VIm - <em>bonne maitrise, utilisation quotidienne</em>, QtCreator
+      <dt>CMS<dd>Dotclear, Drupal, Prestashop
+      <dt>Wiki<dd>Dokuwiki, Mediawiki
+    </dl>
+
+    <h3>Autres</h3>
+    <dl class="dl-horizontal">
+      <dt>Anglais<dd>lu, écrit, parlé
+      <dt>Espagnol<dd>notions
+      <dt>Divers<dd>Compétences scientifiques et managériales
+    </dl>
 
   </div>
 
   <div class="tab-pane fade" id="references">
     <h2>Expériences professionnelles</h2>
     
-    <h3>Informatique</h3>
+    <h3>Emplois</h3>
     
     <table class="table">
       <tr>
         <td><span class="label label-info">Avril - Septembre 2013</span></td>
-        <td><strong>Administrateur Système / Développeur Web</strong> chez <a href="#">Bluelogic (Bidart, 64)</a>
+        <td><strong>Administrateur Système et Développeur Web</strong>(HTML, PHP, CSS, JQuery, Ajax, symfony, Elgg) / Stagiaire chez <a href="#">Bluelogic (Bidart, 64)</a>
           <ul>
-            <li>toto
-            <li>tata
+            <li>Mise en place d'une architecture de type "cloud" pour un site web réseau social.
+            <li>Développement de modules pour divers CMS (prestashop) et framework (symfony 1.2, Elgg).
           </ul>
         </td>
       </tr>
@@ -100,6 +121,11 @@ default_block: None
     <h3>Projets d'études</h3>
     
     <table class="table">
+      <tr>
+        <td><span class="label label-info">2013, Master 2</span></td>
+        <td><strong>Qemu</strong>
+          <p>Implémentation du support d'IPv6 et de divers protocoles réseau de couche 4 (ICMPv6, NTP) dans le mode user (Slirp) de Qemu. Développement en C, utilisation intensive de l'outil de travail collaboratif Git. Soumission de patchs à Qemu upstream.</p>
+      </tr>
       <tr class="inactive">
         <td><span class="label label-inverse">2012, Master 1</span></td>
         <td><strong>Neural Network Simulator</strong>
@@ -125,12 +151,75 @@ default_block: None
 
   <div class="tab-pane fade" id="studies">
     <h2>Études</h2>
+    <table class="table">
+      <tr>
+        <td><span class="label label-info">2013</span></td>
+        <td><strong>Master Informatique - Réseaux, Systèmes et Mobilité</strong>, Université Bordeaux 1.
+          <p>Spécialité Réseaux et Systèmes Autonomes Communicants</p>
+      </tr>
+      <tr>
+        <td><span class="label label-info">2011</span></td>
+        <td><strong>Licence Sciences et Techniques</strong>, Université Bordeaux 1.
+          <p>Spécialité Informatique</p>
+      </tr>
+      <tr>
+        <td><span class="label label-info">2010</span></td>
+        <td><strong>Diplôme Universitaire et Technologique, Informatique</strong>, IUT de Bayonne (Université de Pau et des Pays de l'Adour), département informatique. 
+          <p>Spécialité Analyse et Programmation</p>
+      </tr>
+      <tr>
+        <td><span class="label label-info">2008</span></td>
+        <td><strong>Baccalauréat Scientifique</strong>, Lycée René Cassin, Bayonne, Mention Assez Bien. 
+          <p>Spécialité Physique-Chimie</p>
+      </tr>
+    </table>
   </div>
 
   <div class="tab-pane fade" id="projects">
     <h2>Projets</h2>
+    <table class="table">
+      <tr>
+        <td><span class="label label-info">Depuis 2010</span></td>
+        <td>
+          <strong>Aquilenet</strong> - Fournisseur d'accès Internet associatif
+          <ul>
+            <li>Secrétaire et membre fondateur
+            <li>Création et administration du site web (Drupal)
+            <li>Administration système (GNU/Linux Debian, Xen, Shinken…)
+            <li>Administration réseau (OpenBGPd, iptables…)
+            <li>Administration et participation aux listes de diffusion
+            <li>Installation et administration de ChiliProject
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="label label-info">Depuis 2011</span></td>
+        <td>
+          <strong>Fédération FDN</strong> - Fédération de fournisseurs d'accès Internet associatifs
+          <ul>
+            <li>Secrétaire et membre fondateur
+            <li>Création et administration du site web (Drupal)
+            <li>Développement de l'outil de vote en ligne <a href="http://vote.ffdn.org/">Cavote</a> (Python Flask, Bootstrap)
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="label label-info">Depuis 2012</span></td>
+        <td>
+          <strong>Aquitaine Réseau</strong> - Projet de Gix à Bordeaux (Girondix)
+          <ul>
+            <li>Secrétaire et membre fondateur
+          </ul>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
 
 {% endblock %}
 
+{% block scripts %}
+<script type="text/javascript">
+  bootstrap_tab_bookmark();
+</script>
+{% endblock %}

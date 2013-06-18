@@ -1,9 +1,16 @@
 body {
-    padding-top: 60px;
+    margin-top: 60px;
     background-color: #eee;
     font-family: 'Noticia Text','Droid Serif',Georgia,serif,'Lucida Grande','Lucida Sans Unicode','Arial Unicode MS';
     padding-bottom: 0px;
 }
+
+@media (max-width: 979px) {
+    body {
+        margin-top: 0px;
+    }
+}
+
 
 footer {
     background-color: #F5F5F5;
