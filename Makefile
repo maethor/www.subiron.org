@@ -3,7 +3,7 @@ deploy: site.yaml clean
 
 pub: deploy
 	if ! git status | egrep -q '^nothing to commit.*working directory clean'; then echo Untracked files, not pushing && exit 1; fi
-	rsync -Pavz --delete deploy/ www.subiron.org:/srv/www/subiron.org/www/htdocs/new/
+	rsync -Pavz --delete deploy/ www.subiron.org:/srv/www/subiron.org/www/htdocs/
 
 clean:
 	rm -rf deploy
