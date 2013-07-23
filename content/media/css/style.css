@@ -1,8 +1,12 @@
 body {
     margin-top: 60px;
     background-color: #eee;
-    font-family: 'Noticia Text','Droid Serif',Georgia,serif,'Lucida Grande','Lucida Sans Unicode','Arial Unicode MS';
+    font-family: "Source Code Pro","Helvetica","Arial",sans-serif;
     padding-bottom: 0px;
+}
+
+h1, h2, h3 {
+    font-family: "Noticia Text","Source Code Pro","Helvetica","Arial",sans-serif;
 }
 
 @media (max-width: 979px) {
