@@ -38,15 +38,25 @@
           <ul class="nav">
             {% for menu_item in menu %}
             <li{% if site.content.resource_from_relative_path(menu_item.url).url == resource.url or (menu_item.url == "/" and resource.url ==  "/index.html") %} class="active"{% endif %}>
-              <a href="{{ menu_item.url }}">
-                {% if menu_item.icon %}
+            <a href="{{ menu_item.url }}" title="{{ menu_item.description}}">
+              {% if menu_item.icon %}
               <i class="icon-{{menu_item.icon}} icon-white"></i>
               {% endif %}
               {{ menu_item.name }}
-              </a>
+            </a>
             </li>
             {%- endfor %}
+          </ul>
 
+          <ul class="nav pull-right">
+            {% for menu_item in menu_ext %}
+            <li><a href="{{ menu_item.url }}" title="{{ menu_item.description}}">
+              {% if menu_item.icon %}
+              <i class="icon-{{menu_item.icon}} icon-white"></i>
+              {% endif %}
+              {{ menu_item.name }}
+            </a></li>
+            {%- endfor %}
           </ul>
         </div>
       </div>

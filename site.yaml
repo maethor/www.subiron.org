@@ -28,8 +28,25 @@ context:
         description: CV
         url: /
       - name: Contact
-        description: Contact me
+        description: Me contacter
         url: contact.html
+    menu_ext:
+      - name: ± Git
+        description: Mes dépôts Git
+        url: http://git.subiron.org/
+      - name: Blog
+        description: Blog
+        url: http://blog.subiron.org/
+    menu_social:
+      - name: Github
+        url: http://www.github.com/maethor
+        icon: /media/img/icons/github.png
+      - name: CGit
+        url: http://git.subiron.org/
+        icon: /media/img/icons/cgit.png
+      - name: Twitter
+        url: http://www.twitter.com/gsubiron
+        icon: /media/img/icons/twitter.png
 
 sorter:
   time:

@@ -5,7 +5,12 @@
 
   <a class="btn btn-small" href="/contact">Me contacter</a>
 
+  <br><br>
+
   <div>
+    {% for menu_item in menu_social %}
+    <a href="{{ menu_item.url }}" title="{{ menu_item.name }}"><img src="{{ menu_item.icon }}" alt="{{ menu_item.name }}" title="{{ menu_item.name }}"></a>
+    {%- endfor %}
   </div>
 
   <br>
