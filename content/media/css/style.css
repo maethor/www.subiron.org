@@ -10,6 +10,10 @@ h1, h2, h3 {
     font-family: "Noticia Text","Source Code Pro","Helvetica","Arial",sans-serif;
 }
 
+h3 small {
+    font-size: 15px;
+}
+
 @media (max-width: 979px) {
     body {
         margin-top: 0px;
@@ -31,4 +35,8 @@ footer {
 
 .aside-profile {
     text-align: center;
+}
+
+dt, dd {
+    line-height: 22px;
 }
