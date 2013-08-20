@@ -71,7 +71,6 @@ tagger:
 publisher:
   ssh:
     type: hyde.ext.publishers.ssh.SSH
-    username: maethor
     server: www.subiron.org
     target: /srv/www/subiron.org/www/htdocs/
     command: rsync
