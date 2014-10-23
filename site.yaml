@@ -34,8 +34,14 @@ context:
       - name: ± Git
         description: Mes dépôts Git
         url: http://git.subiron.org/
+      - name: ± Photos
+        description: Mes photos
+        url: http://photos.subiron.org/
       - name: Blog
         description: Blog
+        url: http://www.sysnove.fr/blog/
+      - name: Blog (old)
+        description: Ancien blog
         url: http://blog.subiron.org/
     menu_social:
       - name: Github
